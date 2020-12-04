@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: builder
 
 bases:
-- registry
+- ../../bases/registry
 
 patches:
 - registry.yaml
