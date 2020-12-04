@@ -3,5 +3,11 @@ kind: Kustomization
 
 namespace: builder
 
+bases:
+- registry
+
+patches:
+- registry.yaml
+
 resources:
 - namespace.yaml
