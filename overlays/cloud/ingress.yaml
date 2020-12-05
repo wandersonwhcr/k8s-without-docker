@@ -7,7 +7,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: registry.builder.svc.cluster.local
+  - host: registry.cloud.localhost
     http:
       paths:
       - path: /
@@ -19,5 +19,5 @@ spec:
               name: http
   tls:
   - hosts:
-    - registry.builder.svc.cluster.local
+    - registry.cloud.localhost
     secretName: certificate-registry
