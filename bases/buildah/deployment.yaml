@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: buildah
+spec:
+  selector:
+    matchLabels:
+      name: buildah
+  template:
+    metadata:
+      labels:
+        name: buildah
+    spec:
+      containers:
+      - name: buildah
+        image: registry.builder.svc.cluster.local/buildah
+        stdin: true
+        command: ["cat"]
+        securityContext:
+          privileged: true

@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: builder
 
 bases:
+- ../../bases/buildah
 - ../../bases/registry
 
 patches:
