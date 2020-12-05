@@ -21,4 +21,4 @@ spec:
   tls:
   - hosts:
     - registry.builder.svc.cluster.local
-    secretName: certificate
+    secretName: certificate-registry

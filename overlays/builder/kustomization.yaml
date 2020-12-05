@@ -10,7 +10,7 @@ patches:
 - registry.yaml
 
 resources:
-- certificate.yaml
+- certificates.yaml
 - ingress.yaml
 - issuer.yaml
 - namespace.yaml
